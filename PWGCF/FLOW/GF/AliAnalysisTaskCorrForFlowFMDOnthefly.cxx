@@ -650,8 +650,8 @@ void AliAnalysisTaskCorrForFlowFMDOnthefly::UserExec(Option_t *)
 //_____________________________________________________________________________
 void AliAnalysisTaskCorrForFlowFMDOnthefly::Terminate(Option_t *)
 {
-   // if(fPoolMgr) delete fPoolMgr;
-   // if(fOutputListCharged) delete fOutputListCharged;
+   if(fPoolMgr) delete fPoolMgr;
+   if(fOutputListCharged) delete fOutputListCharged;
 }
 //_____________________________________________________________________________
 Bool_t AliAnalysisTaskCorrForFlowFMDOnthefly::IsEventSelected()
